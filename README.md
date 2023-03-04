@@ -1,6 +1,6 @@
 ## このアプリケーションについて
 
-送った言葉をそのまま送り返すシンプルなチャットボットです。
+送った言葉をChatGPTのAPIに送信して結果を送り返すシンプルなチャットボットです。
 
 ## 開発環境
 
@@ -13,8 +13,8 @@
 ## 開発環境の設定
 
 Ubuntu 環境で下のコマンドの実行
-- git clone https://github.com/mmw365/linebot-lara1.git
-- cd linebot-lara1
+- git clone https://github.com/mmw365/linebot-gpt.git
+- cd linebot-gpt
 - composer install
 
 ### 開発環境の起動
@@ -46,10 +46,15 @@ Ubuntu 環境で下のコマンドの実行
 - 応答メッセージを無効にする
 - チャネルアクセストークンを発行する
 
+## OpenAI のAPI Keyを取得する
+
+- https://platform.openai.com/signup
+
 ## デプロイ
 
 - .env のAPP_ENV、APP_DEBUG等を書き換える
-- .env のCHNNEL_ACCESS_TOKENにLINEのチャネルアクセストークン設定する
+- .env のCHNNEL_ACCESS_TOKENにLINEのチャネルアクセストークンを設定する
+- .env のOPENAI_API_KEYにOpenAIのAPI KEYを設定する
 - php artisan config:cache の実行
 - php artisan route:cache の実行
 - php artisan migrate

@@ -214,4 +214,7 @@ return [
 
     'channel_access_token' => env('CHNNEL_ACCESS_TOKEN'),
     'line_endpoint_url_reply' => env('LINE_ENDPOINT_URL_REPLY'),
+    'openai_api_key' => env('OPENAI_API_KEY'),
+    'openai_endpoint_url_chat' => env('OPENAI_ENDPOINT_URL_CHAT'),
+    'openai_model_chat' => env('OPENAI_MODEL_CHAT'),
 ];
