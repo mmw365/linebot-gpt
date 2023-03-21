@@ -217,4 +217,5 @@ return [
     'openai_api_key' => env('OPENAI_API_KEY'),
     'openai_endpoint_url_chat' => env('OPENAI_ENDPOINT_URL_CHAT'),
     'openai_model_chat' => env('OPENAI_MODEL_CHAT'),
+    'openai_chat_system_message' => env('OPENAI_CHAT_SYSTEM_MESSAGE'),
 ];
